@@ -1,0 +1,201 @@
+/* Global Elements ---------------------------*/
+html {
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	background:none !important;
+
+	opacity: 1;
+	-webkit-font-smoothing: antialiased;
+
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  height:100%;
+  color: $font-color;
+  font-size: 16px;
+  position:relative;
+  @media #{$mobile} {
+		font-size: 14px;
+	}
+}
+#wrapper {
+	position:relative;
+	width:100%;
+	min-height:100%;
+	left:0;
+	z-index:999;
+	padding:0 0 80px;
+	margin:0;
+	
+	@media #{$tablet} {
+		padding:0 0 80px;
+	}
+	@media #{$mobile} {
+		padding:0 0 40px !important;
+		-webkit-overflow-scrolling: touch;
+		-moz-overflow-scrolling: touch;
+		-ms-overflow-scrolling: touch;
+		-o-overflow-scrolling: touch;
+	}
+}
+.home #wrapper {
+	@media #{$tablet}  { 
+		padding:0 0 80px !important;
+		.finding-match { padding-bottom:40px; }
+		@media #{$mobile} {
+			.finding-match { padding-bottom:40px; }
+		padding:0 0 0 !important;
+		}
+	}
+}
+/*.page { padding-top: 73px; }*/
+#content { padding-bottom: 55px; }
+.main {
+	position:relative;
+	width:100%;
+	background:#fff;
+	z-index:10;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+	
+}
+.page-detil .main.action {
+	padding: 214px 0 0;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+	
+	@media #{$tablet} {
+		padding: 214px 0 0;
+	}
+}
+.center {
+	@include box_treatment;
+	position: relative;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+.section-indent {
+	@include box_treatment;
+	padding: 0 5px 5px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: auto;
+}
+.section-no-indent {
+	@include box_treatment;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: auto;
+}
+.two-cols {
+	@include column_treatment(2,40px);
+
+  @media #{$mobile} {
+		@include column_treatment(1,0px);
+	}
+}
+.three-cols {
+	@include column_treatment(3,40px);
+  @media #{$tablet} {
+		@include column_treatment(2,40px);
+	}
+  @media #{$mobile} {
+		@include column_treatment(1,0px);
+	}
+}
+.four-cols {
+	@include column_treatment(4,40px);
+  @media #{$desktop-small} {
+		@include column_treatment(3,40px);
+	}
+  @media #{$tablet} {
+		@include column_treatment(2,40px);
+	}
+  @media #{$mobile} {
+		@include column_treatment(1,0px);
+	}
+}
+.two-col-box {
+	.box {
+		@include box_treatment;
+		background-color: red;
+		float: left;
+		position: relative;
+		width: 50%;
+		height: auto;
+		min-height: 250px;
+		border: 1px solid #fff;
+	  @media #{$mobile} {
+			width: 100%;
+		}
+	}
+}
+.three-col-box {
+	.box {
+		@include box_treatment;
+		background-color: green;
+		float: left;
+		position: relative;
+		width: 33.33%;
+		height: auto;
+		min-height: 250px;
+		border: 1px solid #fff;
+	  @media #{$mobile} {
+			width: 100%;
+		}
+	}
+}
+.four-col-box {
+	.box {
+		@include box_treatment;
+		background-color: blue;
+		float: left;
+		position: relative;
+		width: 25%;
+		height: auto;
+		min-height: 250px;
+		border: 1px solid #fff;
+	  @media #{$desktop-small} {
+			width: 50%;
+		}
+	  @media #{$mobile} {
+			width: 100%;
+		}
+	}
+}
+.five-col-box {
+	.box {
+		@include box_treatment;
+		background-color: orange;
+		float: left;
+		position: relative;
+		width: 20%;
+		height: auto;
+		min-height: 250px;
+		border: 1px solid #fff;
+	  @media #{$mobile} {
+			width: 100%;
+		}
+	}
+}
+.three-columns {
+	width:100%;
+	overflow:hidden;
+
+	.column {
+		position:relative;
+		float:left;
+		width:33.333%;
+
+	}
+}
+.vertical {
+	@include vertical-align;
+
+}
+/*************************************************************************************************************************************************************/

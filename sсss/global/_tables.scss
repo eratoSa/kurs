@@ -1,0 +1,85 @@
+/* =============================================================================
+	TABLES
+	========================================================================== */
+table{
+	border: 1px solid #d6d6d6;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin-top: 20px;
+
+	th{
+		font-size: 18px;
+		padding: 15px 20px;
+		color: #6f6f70;
+		text-align: left;
+
+		@media #{$mobile} {
+		 	font-size: 15px;
+		 	padding: 15px 12px;
+		}
+
+		a.plus{
+			float: right;
+			height: 19px;
+			width: 19px;
+			background: url(../images/icon/plus-ico.png);
+		}
+	}
+
+	td{
+		border: 1px solid #d6d6d6;
+		font-size: 18px;
+		padding: 15px 20px;
+		color: #6f6f70;	
+		line-height: 1em;
+
+		@media #{$mobile} {
+		 	font-size: 15px;
+		 	padding: 15px 12px;
+		}
+
+		a.star{
+			height: 15px;
+			width: 16px;
+			display: block;
+			margin: 0 auto;
+			background-image: url(../images/icon/star-ico.png);
+
+			&:hover {
+				background-image: url(../images/icon/star-ico-hover.png);
+			}
+		}
+		a.yes{
+			float: right;
+			height: 19px;
+			width: 19px;
+			background: url(../images/icon/yes-ico.png);
+		}
+		a.no{
+			float: right;
+			height: 19px;
+			width: 19px;
+			background: url(../images/icon/no-ico.png);
+		}
+
+	}
+	td.right-aligned {
+		text-align: right;
+		width: 30%;
+
+		@media #{$desktop-small} {
+		  width: 32%;
+		 }
+	}
+}
+table.education { 
+	@media #{$desktop-small} {
+		 width: 480px;
+	}
+	@media #{$mobile} {
+		 width: 100%;
+	}
+}
+
+/*************************************************************************************************************************************************************/

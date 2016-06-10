@@ -1,0 +1,46 @@
+.switch-wrap {
+  position:relative;
+  float:left;
+}
+.switch-button-label {
+    font-size: 12pt;
+    cursor: pointer;
+    position:absolute;
+    margin:0 !important;
+}
+
+.switch-button-label.off {
+    color: #727272;
+    right:3px;
+}
+
+.switch-button-label.on {
+    color: $primary-color;
+    left:3px
+}
+
+.switch-button-background {
+    float: left;
+    position: relative;
+    background: #eeeeee;
+    margin: 1px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.switch-button-button {
+    position: absolute;
+
+    left: -1px;
+    top : -1px;
+
+    background: #FAFAFA;
+    border: 1px solid #aaa;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

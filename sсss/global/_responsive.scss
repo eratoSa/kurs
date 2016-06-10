@@ -1,0 +1,43 @@
+
+$wdm: 1218px; /*width-desktop-medium*/
+$wds: 978px;  /*width- desktop-small*/
+$wt: 748px;   /*width-tablet*/
+$wm: 96%;     /*width-mobile*/
+$rp: 15;      /*responsive-padding*/
+
+/*media*/
+$desktop-medium: "(max-width: 1378px)"; /*when the screen is less than 1378*/
+$desktop-small: "(max-width: 1218px)";
+$tablet: "(max-width: 978px)";
+$mobile: "(max-width: 748px)";
+
+
+/*usage: */
+
+.container {
+  @include box_treatment;
+  width: 100%;
+  max-width: $wdm;
+  position: relative;
+  margin: 0 auto;
+
+	@media #{$desktop-small} {
+		width: $wds;
+	}
+  @media #{$tablet} {
+	width: $wt;
+  }
+  @media #{$mobile} {
+	width: $wm;
+  }
+}
+.container:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+.map .container {
+	@media #{$mobile} {
+		text-align:center !important;
+	}
+}

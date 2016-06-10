@@ -1,0 +1,260 @@
+/* Brand Fonts & Treatment -------------------------------------*/
+.h1 {
+  font:{family: $brand-font-1; weight: 600; size: 2em}
+  padding: 15px 0 0 0;
+  margin: 0;
+  width:100%;
+  overflow:hidden;
+  color:$primary-color;
+}
+.h2 {
+  font:{family: $brand-font-1; weight: 600; size: 1.7em}
+  padding: 12px 0 0 0;
+  line-height: 1.2em;
+  margin: 0;
+  color: $primary-color;
+  width:100%;
+  overflow:hidden;
+}
+.h3 {
+  font:{family: $brand-font-1; weight: 400; size: 1.5em}
+  padding: 10px 0 0 0;
+  line-height: 1.2em;
+  margin: 0;
+  color: $primary-color;
+  width:100%;
+  overflow:hidden;
+}
+.h4 {
+  font:{family: $brand-font-1; weight: 400; size: 1.4em}
+  padding: 10px 0 0 0;
+  line-height: 1.2em;
+  margin: 0;
+  color: $primary-color;
+  width:100%;
+  overflow:hidden;
+}
+.h5 {
+  font:{family: $brand-font-1; weight: 500; size: 1.3em; style: italic}
+  padding: 5px 0 0 0;
+  line-height: 1.2em;
+  margin:0;
+  width:100%;
+  overflow:hidden;
+  color:$primary-color;
+}
+h6 {
+	font-size: 1.063em;
+	line-height: 1.2em;
+	font-weight: 400;
+	width:100%;
+  overflow:hidden;
+	color:$primary-color;
+}
+.h6 {
+  font:{family: $brand-font-1; weight: 300; size: 1.2em}
+  padding: 5px 0 0 0;
+  line-height: 1.1em;
+  margin: 0;
+  color: $primary-color;
+}
+h1 { @extend .h1; }
+h2 { @extend .h2; }
+h3 { @extend .h3; }
+h4 { @extend .h4; }
+h5 { @extend .h5; }
+h6 { @extend .h6; }
+p, span, a {
+  font:{family: $brand-font-1; weight: 100; size: 1em}
+  color:#fff;
+  margin: 0;
+  line-height:1.2em;
+}
+p {padding: 10px 0px; font-weight:300;}
+.link {
+  color: $primary-color;
+  text-decoration: none;
+  &:link{
+  font-size:1em;
+  font-weight: 400;
+  @extend a;
+  }
+  &:visited, &:hover, &:active {
+  text-decoration: none;
+  }
+  &:hover, &:active {
+  color: inherit;
+  }
+  &:hover, &:visited:hover{
+  }
+}
+a { @extend .link; }
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
+ul li {
+  position: relative;
+  text-decoration: none;
+  font:{family: $brand-font-1; weight: 100; size: 0.9em}
+  line-height: 1.8em;
+  padding-left: 0;
+}
+
+ul li:before {
+  position: absolute;
+  left:0;
+  top:0;
+  content: "";
+  font-weight: 400;
+  width: 5px;
+  height: 5px;
+  display: none;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 600;
+}
+.wysiwyg h2, h2.title { 
+  color: #bbb;
+  font-size: 30px; 
+  padding: 15px 0 15px 35px;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  box-sizing:border-box;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url(../images/icon/ico-mark-01.png) 0 0  no-repeat;
+    width: 29px;
+    height: 22px;
+    margin: -11px 0 0;
+  }
+}
+html,
+button,
+input,
+select,
+textarea {
+    font:{family: $brand-font-1; weight: 100; size: 1em}
+}
+.wysiwyg h3 { font-size: 25px; font-weight: 600; padding: 15px 0; }
+.wysiwyg h4 { 
+  color: #006834;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 15px 0; 
+}
+.wysiwyg h5 { font-size: 17px; font-weight: 600; font-style: normal; }
+.wysiwyg p {
+	font:{family: $brand-font-1; weight: 300; size: 1em}
+	padding: 0 0 20px;
+	line-height: 1.5em;
+	margin: 0;
+	color:#6f6f70;
+}
+.wysiwyg .link {
+  color: #638c20;
+  text-decoration: none;
+  &:link{
+	font-size:1em;
+	font-weight: 400;
+	@extend a;
+  }
+  &:visited {
+	color: #ababab;
+  }
+  &:hover, &:active {
+	color: inherit;
+  text-decoration: underline;
+  }
+  &:hover, &:visited:hover {
+    color: inherit;
+  text-decoration: underline;
+  }
+}
+.wysiwyg a { @extend .link; }
+
+.wysiwyg ul {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
+.wysiwyg ul li, .wysiwyg ol li {
+  position: relative;
+  text-decoration: none;
+  font:{family: $brand-font-1; weight: 100; size: 1em}
+  line-height: 1.8em;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  color:#6f6f70;
+  background:  url(../images/list-ico.png) 18px 12px no-repeat; 
+}
+.wysiwyg ol li { 
+  padding-bottom: 10px; 
+  background: none; 
+  padding-left: 0; 
+}
+.wysiwyg ul li:before {
+  position: absolute;
+  left:0;
+  top:0;
+  content: "";
+  font-weight: 400;
+  width: 5px;
+  height: 5px;
+  display: none;
+}
+.wysiwyg em {
+  font-style: italic;
+}
+.wysiwyg strong {
+  font-weight: 600;
+  color: $primary-color;
+}
+.wysiwyg .left-align {
+  float: left;
+  padding-right: 15px;
+  width: auto;
+
+  @media #{$mobile} {
+    width: 100%;
+  }
+}
+.wysiwyg .right-align {
+  float: right;
+  padding-left: 15px;
+  width: auto;
+
+  @media #{$mobile} {
+    width: 100%;
+  }
+}
+.wysiwyg .full {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.mcontent h2 {
+    color: #404040;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 0 0 22px 0;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+  }
+/***************************************************************************************************************************************************/
